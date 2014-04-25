@@ -1,0 +1,54 @@
+body{
+	font: 12px/18px "verdana";
+}
+body,p,ul,li,dl,dt,dd,form{
+	margin: 0;
+	padding: 0;
+}
+ul,dl,li{
+	list-style: none;
+}
+.sRoll-Wrapper{
+	position: relative;
+	text-align: center;
+}
+.sRoll-Button-wp{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+}
+
+.sRoll-btn{
+	position: absolute;
+	width: 20px;
+	height: 40px;
+	background: url(../img/slider-buttons.png) no-repeat 0 0;
+	z-index: 99;
+	cursor: pointer;
+}
+
+.sRoll-prev{
+	background-position: 0 0;
+	left: 0;
+}
+.sRoll-prev:hover{
+	background-position: 0 -40px;
+}
+.sRoll-next{
+	background-position: -20px 0;
+	right: 0;
+}
+.sRoll-next:hover{
+	background-position: -20px -40px;
+}
+.sRoll-Index{
+	display: inline-block;
+}
+.sRoll-Index li{
+	float: left;
+}
+.sRoll-Index li a{
+	display: block;
+	margin-right: 40px;
+	color: #999;
+}

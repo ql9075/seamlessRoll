@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>seamlessRoll</title>
+	<link rel="stylesheet" type="text/css" href="css/_seamlessRoll.css" />
+	<style type="text/css">
+	.wrapper{
+		width: 900px;
+		margin: auto;
+	}
+	.ul_roll{
+		position: relative;
+	}
+	.ul_roll li{	
+		position: absolute;
+	}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<ul class="ul_roll">
+			<li style="z-index:99">
+				<a href="">
+					<img src="img/s_pic1.jpg" />
+				</a>
+			</li>
+			<li class="ss">
+				<a href="">
+					<img src="img/s_pic2.jpg" />
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="img/s_pic3.jpg" />
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="img/s_pic4.jpg" />
+				</a>
+			</li>
+		</ul>
+
+	</div>
+	<script type="text/javascript" src="js/jquery.1.7.2.js"></script>
+	<script type="text/javascript" src="js/_seamlessRoll.js"></script>
+	<script type="text/javascript">
+		$(function(){
+				$(".ul_roll")._seamlessRoll({
+						width:900,
+						height:300,
+						button:true,
+						index :true,
+						currindex:"",
+						loop:false,
+						fadetime:400,
+						times:0,
+						isAuto:false
+				});
+
+
+		});
+	</script>
+</body>
+</html>
